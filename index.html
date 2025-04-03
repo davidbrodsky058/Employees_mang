@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת ניהול - דף הבית</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>מערכת ניהול עובדים</h1>
+        <nav>
+            <ul>
+                <li><a href="#">דף הבית</a></li>
+                <li><a href="employees.html">ניהול עובדים</a></li>
+                <li><a href="stats.html">סטטיסטיקות</a></li>
+                <li><a href="#">שיפורים</a></li>
+                <li><a href="#">יצירת דוחות</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="dashboard">
+            <h2>!ברוך הבא, מנהל</h2>
+            <p>מצב חיבור: <strong>מחובר</strong></p>
+            <div class="actions">
+                <button>הזמן חדר</button>
+                <button>מלא סקר יומי</button>
+            </div>
+        </section>
+
+        <section class="top-employees">
+            <h2>העובדים המצטיינים של השבוע</h2>
+            <div class="employee-cards">
+                <div class="card">
+                    <h3>יוסי כהן</h3>
+                    <p>מחלקת פיתוח</p>
+                </div>
+                <div class="card">
+                    <h3>דנה לוי</h3>
+                    <p>שירות לקוחות</p>
+                </div>
+                <div class="card">
+                    <h3>רון ישראלי</h3>
+                    <p>מחלקת שיווק</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>תפוקה שבועית</h2>
+            <canvas id="productivityChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 מערכת ניהול עובדים</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('productivityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['יום א', 'יום ב', 'יום ג', 'יום ד', 'יום ה', 'יום ו', 'שבת'],
+                datasets: [{
+                    label: 'תפוקה שבועית',
+                    data: [80, 85, 78, 90, 88, 75, 70],
+                    borderColor: 'green',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

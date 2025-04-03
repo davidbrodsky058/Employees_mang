@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יצירת דוחות</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+
+<header>
+    <h1>יצירת דוחות</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">דף הבית</a></li>
+            <li><a href="employees.html">ניהול עובדים</a></li>
+            <li><a href="stats.html">סטטיסטיקות</a></li>
+            <li><a href="improvements.html">שיפורים</a></li>
+            <li><a href="#">יצירת דוחות</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="report-form">
+        <h2>הפקת דוח תפוקה</h2>
+        <form>
+            <div class="form-group">
+                <label for="report-type">בחר סוג דוח:</label>
+                <select id="report-type">
+                    <option value="employee">עובד</option>
+                    <option value="team">צוות</option>
+                    <option value="department">מחלקה</option>
+                    <option value="company">החברה כולה</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">תאריך התחלה:</label>
+                <input type="date" id="start-date" name="start-date">
+            </div>
+
+            <div class="form-group">
+                <label for="end-date">תאריך סיום:</label>
+                <input type="date" id="end-date" name="end-date">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">הפק דוח</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="report-preview">
+        <h3>תצוגה מקדימה לדוח:</h3>
+        <p>לאחר יצירת הדוח, כאן יוצגו פרטי הדוח על פי הנתונים שנבחרו.</p>
+    </section>
+
+    <!-- כפתור הורדה -->
+    <section class="download-section">
+        <button id="download-btn" class="download-btn" style="display:none;">הורד דוח כ-PDF</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 מערכת ניהול עובדים</p>
+</footer>
+
+</body>
+</html>

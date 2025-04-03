@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול עובדים</title>
+    <link rel="stylesheet" href="employees.css">
+</head>
+<body>
+
+<header>
+    <h1>ניהול עובדים</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">דף הבית</a></li>
+            <li><a href="employees.html">ניהול עובדים</a></li>
+            <li><a href="stats.html">סטטיסטיקות</a></li>
+            <li><a href="improvements.html">שיפורים</a></li>
+            <li><a href="reports.html">יצירת דוחות</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="search-sort">
+        <input type="text" id="search" placeholder="חפש עובד לפי שם...">
+        <select id="sort">
+            <option value="name">מיון לפי שם</option>
+            <option value="date">מיון לפי תאריך העסקה</option>
+            <option value="efficiency">מיון לפי יעילות</option>
+        </select>
+        <select id="department-filter">
+            <option value="all">כל המחלקות</option>
+            <option value="marketing">שיווק</option>
+            <option value="development">פיתוח</option>
+            <option value="hr">משאבי אנוש</option>
+        </select>
+    </section>
+
+    <section class="employee-gallery">
+        <div class="employee-card">
+            <img src="/images/yossi cohen.jpg" alt="">
+            <h3>יוסי כהן</h3>
+            <p>מחלקה: פיתוח</p>
+            <p>מספר עובד: 12345</p>
+            <button>פרטים נוספים</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 מערכת ניהול עובדים</p>
+</footer>
+
+</body>
+</html>

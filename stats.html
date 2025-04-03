@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סטטיסטיקות עובדים</title>
+    <link rel="stylesheet" href="stats.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="stats.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>סטטיסטיקות עובדים</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="employees.html">ניהול עובדים</a></li>
+                <li><a href="stats.html">סטטיסטיקות</a></li>
+                <li><a href="improvements.html">שיפורים</a></li>
+                <li><a href="reports.html">יצירת דוחות</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="stats-container">
+            <h2>תפוקה שבועית</h2>
+            <canvas id="productivityChart"></canvas>
+        </section>
+
+        <section class="stats-container">
+            <h2>התפלגות מחלקות</h2>
+            <canvas id="departmentChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 מערכת ניהול עובדים</p>
+    </footer>
+</body>
+</html>
